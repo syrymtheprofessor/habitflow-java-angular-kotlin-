@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/habitflow
+    username: habitflow
+#   password: habitflow - TOLEARN #5 Это то что должно лежать в Vault. По фану сделал так
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/habitflow

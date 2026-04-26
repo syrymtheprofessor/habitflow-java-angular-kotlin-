@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: habitflow-backend
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      token: myroot
+      kv:
+        enabled: true
+        backend: habitflow
+      scheme: http
+
+
+#   application.yml читается когда Spring контекст уже поднимается.
+
+#   Vault нужен до этого — чтобы подставить секреты в конфигурацию.
+#   Поэтому Spring Cloud ввёл bootstrap.yml — он читается первым.
+
+
+#   В логах: Vault location [habitflow/application] not resolvable: Not found
+#   Vault ищет ещё второй путь habitflow/application — это дефолтное поведение Spring Cloud Vault. Просто создай пустой секрет в Vault: Path: application. Добавь любое поле, например placeholder: true
+
