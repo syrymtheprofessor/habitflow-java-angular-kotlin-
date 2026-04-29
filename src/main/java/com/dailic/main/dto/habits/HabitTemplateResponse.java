@@ -1,4 +1,4 @@
-package com.dailic.main.dto.HabitTemplate;
+package com.dailic.main.dto.habits;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +9,6 @@ public class HabitTemplateResponse {
 
     private String name;
     private String description;
-    private String category;
+    private String categoryName;
     private String sourceUrl;
 }

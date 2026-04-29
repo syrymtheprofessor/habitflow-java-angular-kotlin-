@@ -1,6 +1,6 @@
-package com.dailic.main.controller;
+package com.dailic.main.controller.habits;
 
-import com.dailic.main.dto.HabitTemplate.HabitTemplateResponse;
+import com.dailic.main.dto.habits.HabitTemplateResponse;
 import com.dailic.main.dto.PageRequestDto;
 import com.dailic.main.service.HabitTemplateService;
 import com.dailic.main.util.PagedResponse;

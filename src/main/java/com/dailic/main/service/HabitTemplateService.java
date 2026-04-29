@@ -1,6 +1,6 @@
 package com.dailic.main.service;
 
-import com.dailic.main.dto.HabitTemplate.HabitTemplateResponse;
+import com.dailic.main.dto.habits.HabitTemplateResponse;
 import com.dailic.main.dto.PageRequestDto;
 import com.dailic.main.mapper.HabitTemplateMapper;
 import com.dailic.main.model.HabitTemplate;
