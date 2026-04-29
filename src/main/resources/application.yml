@@ -2,6 +2,12 @@ server:
   port: 8081
 
 spring:
+  jpa:
+    hibernate:
+      ddl-auto: update # позже поставлю none, и поставлю sql-миграции
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     url: jdbc:postgresql://localhost:5432/habitflow
     username: habitflow
