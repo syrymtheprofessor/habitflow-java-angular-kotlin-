@@ -20,8 +20,10 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(MockitoExtension.class)
 public class UserHabitMapperTest {
 
-    @Spy
-    @InjectMocks
+    @Spy // @Spy создаёт реальный объект HabitTemplateMapper
+    private HabitTemplateMapperImpl habitTemplateMapper;
+
+    @InjectMocks //  и Mockito инжектит его в UserHabitMapperImpl
     private UserHabitMapperImpl mapperImpl;
 
     @Test

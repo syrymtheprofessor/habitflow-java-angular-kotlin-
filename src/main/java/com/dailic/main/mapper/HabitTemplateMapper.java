@@ -8,6 +8,6 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring") // componentModel = "spring" — чтобы MapStruct сгенерировал Spring bean и его можно было инжектить через @RequiredArgsConstructor
 public interface HabitTemplateMapper {
 
-    @Mapping(source = "category.name", target = "category")
+    @Mapping(source = "category.name", target = "categoryName")
     HabitTemplateResponse toDto(HabitTemplate habitTemplate);
 }
