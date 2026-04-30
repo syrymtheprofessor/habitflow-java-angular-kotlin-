@@ -6,7 +6,7 @@ TOLEARN #4. 100 символов надеюсь?
 
 TOLEARN #5 — что такое PKCE (Proof Key for Code Exchange) и почему он безопаснее client_secret для браузерных приложений?
 
-
+TOLEARN #6 Мониторинг Listener если шина переполнится 
 
 
 

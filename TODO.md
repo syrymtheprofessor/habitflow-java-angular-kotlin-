@@ -23,9 +23,7 @@ PagedResponse для фронта
 
 Типичное поведение: “Rate limiting — не единственное решение. Нужно ещё защиту на уровне gateway и разделить публичные/внутренние API”
 
-3) При создании в Keycloak, создать у себя в User
-   Keycloak Events — Keycloak отправляет webhook при регистрации, ты ловишь и создаёшь 
-
-
-
+3) 
+При создании в Keycloak, создать у себя в User (протестить event controller)
+Keycloak Events — Keycloak отправляет webhook при регистрации, ты ловишь и создаёшь
 

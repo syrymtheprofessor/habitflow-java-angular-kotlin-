@@ -8,12 +8,26 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
   datasource:
     url: jdbc:postgresql://localhost:5432/habitflow
     username: habitflow
 #   password: habitflow - TOLEARN #5 Это то что должно лежать в Vault. По фану сделал так
+
   security:
     oauth2:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:8080/realms/habitflow
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: habitflow-group
+      auto-offset-reset: earliest # если Consumer новый и не знает с какого offset читать — начнёт с самого начала
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.ByteArrayDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.ByteArraySerializer
+

@@ -98,6 +98,18 @@
 			<version>2.7.0</version>
 		</dependency>
 
+		<!-- Fifth dependency (Apache Kafka) -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.25.3</version>
+		</dependency>
+
 
 	</dependencies>
 
@@ -143,6 +155,26 @@
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
+			</plugin>
+
+<!--		Плагин для генерации кода из .proto файлов -->
+			<plugin>
+				<groupId>com.github.os72</groupId>
+				<artifactId>protoc-jar-maven-plugin</artifactId>
+				<version>3.11.4</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<inputDirectories>
+								<include>src/main/proto</include> <!-- Плагин protoc-jar по умолчанию смотрит только в src/main/proto/ -->
+							</inputDirectories>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
