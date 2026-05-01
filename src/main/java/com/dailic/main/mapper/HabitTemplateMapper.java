@@ -1,6 +1,6 @@
 package com.dailic.main.mapper;
 
-import com.dailic.main.dto.habits.HabitTemplateResponse;
+import com.dailic.main.dto.habitTemplate.GetHabitTemplateResponse;
 import com.dailic.main.model.HabitTemplate;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -9,5 +9,5 @@ import org.mapstruct.Mapping;
 public interface HabitTemplateMapper {
 
     @Mapping(source = "category.name", target = "categoryName")
-    HabitTemplateResponse toDto(HabitTemplate habitTemplate);
+    GetHabitTemplateResponse toDto(HabitTemplate habitTemplate);
 }

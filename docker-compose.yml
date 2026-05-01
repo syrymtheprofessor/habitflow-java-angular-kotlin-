@@ -30,7 +30,7 @@ services:
       - postgres
 
   app:
-    build: ./backend
+    build: .
     ports:
       - "8081:8081"
     environment:

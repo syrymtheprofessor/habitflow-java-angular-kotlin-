@@ -1,6 +1,6 @@
-package com.dailic.main.dto.personal;
+package com.dailic.main.dto.userHabit;
 
-import com.dailic.main.dto.habits.HabitTemplateResponse;
+import com.dailic.main.dto.habitTemplate.GetHabitTemplateResponse;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -12,7 +12,7 @@ import java.util.UUID;
 public class UserHabitResponse {
 
     private UUID id;
-    private HabitTemplateResponse habitTemplate;
+    private GetHabitTemplateResponse habitTemplate;
     private Integer streak;
     private String note;
     private LocalDate startedAt;

@@ -1,6 +1,6 @@
 package com.dailic.main.mapper;
 
-import com.dailic.main.dto.personal.UserHabitResponse;
+import com.dailic.main.dto.userHabit.UserHabitResponse;
 import com.dailic.main.model.Category;
 import com.dailic.main.model.HabitTemplate;
 import com.dailic.main.model.User;

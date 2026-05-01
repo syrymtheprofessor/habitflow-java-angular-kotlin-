@@ -27,7 +27,8 @@ public class User {
     @Id
     private UUID id;
 
-    private String name;
+    private String firstName;
+    private String lastName;
     private String email;
     private String avatarKey; // take from minIO
     private String country; // по приколу из IP-Address попытаюсь вытащить

@@ -4,7 +4,7 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: update # позже поставлю none, и поставлю sql-миграции
+      ddl-auto: create-drop # позже поставлю none, и поставлю sql-миграции
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,6 +1,6 @@
 package com.dailic.main.mapper;
 
-import com.dailic.main.dto.personal.UserHabitResponse;
+import com.dailic.main.dto.userHabit.UserHabitResponse;
 import com.dailic.main.model.UserHabit;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

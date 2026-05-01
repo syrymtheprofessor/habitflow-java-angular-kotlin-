@@ -3,15 +3,16 @@ package com.dailic.main.model;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
-
+import lombok.*;
 import java.time.LocalDate;
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserHabit {
 
     @Id
@@ -27,13 +28,18 @@ public class UserHabit {
     private HabitTemplate template;
 
     @NotNull
-    private Integer streak;
+    @Builder.Default
+    private Integer streak = 0;
 
-    @NotNull
     @Size(max = 100)
     private String note; // todo-feat дневник мб буду добавлять
 
-    private LocalDate startedAt;
+    private LocalDate createdAt;
+
+    @PrePersist
+    public void prePersist() {
+        createdAt = LocalDate.now();
+    }
 }
 
 /*

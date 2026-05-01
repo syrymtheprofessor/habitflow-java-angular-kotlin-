@@ -27,7 +27,8 @@ public class UserRegistrationConsumer {
             User user = new User();
             user.setId(keycloakId);
             user.setEmail(event.getEmail());
-            user.setName(event.getFirstName() + " " + event.getLastName());
+            user.setFirstName(event.getFirstName());
+            user.setLastName(event.getLastName());
             return userRepository.save(user);
         });
     }

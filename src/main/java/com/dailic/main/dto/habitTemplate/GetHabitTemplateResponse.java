@@ -1,11 +1,11 @@
-package com.dailic.main.dto.habits;
+package com.dailic.main.dto.habitTemplate;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class HabitTemplateResponse {
+public class GetHabitTemplateResponse {
 
     private String name;
     private String description;
