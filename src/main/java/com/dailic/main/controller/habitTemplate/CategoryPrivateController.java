@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/private")
+@RequestMapping("/api/private/categories")
 @RequiredArgsConstructor
 public class CategoryPrivateController {
 

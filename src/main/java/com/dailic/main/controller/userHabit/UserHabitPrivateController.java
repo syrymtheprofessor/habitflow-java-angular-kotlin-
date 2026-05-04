@@ -4,7 +4,7 @@ import com.dailic.main.dto.PageRequestDto;
 import com.dailic.main.dto.userHabit.UserHabitResponse;
 import com.dailic.main.service.UserHabitService;
 import com.dailic.main.util.CustomUserPrincipal;
-import com.dailic.main.util.PagedResponse;
+import com.dailic.main.dto.PagedResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

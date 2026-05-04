@@ -7,7 +7,7 @@ import com.dailic.main.mapper.HabitTemplateMapper;
 import com.dailic.main.model.HabitTemplate;
 import com.dailic.main.repository.CategoryRepository;
 import com.dailic.main.repository.HabitTemplateRepository;
-import com.dailic.main.util.PagedResponse;
+import com.dailic.main.dto.PagedResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;

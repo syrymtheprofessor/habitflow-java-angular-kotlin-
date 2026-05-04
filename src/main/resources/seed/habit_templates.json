@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Morning run",
+    "description": "Run 30 minutes every morning to boost energy",
+    "sourceUrl": "https://www.healthline.com/health/benefits-of-running",
+    "categoryName": "Fitness"
+  },
+  {
+    "name": "Push-ups",
+    "description": "Do 20 push-ups daily to build upper body strength",
+    "sourceUrl": "https://www.healthline.com/health/pushup-benefits",
+    "categoryName": "Fitness"
+  },
+  {
+    "name": "Read 25 minutes",
+    "description": "Read 25 minutes daily using Pomodoro technique",
+    "sourceUrl": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3868356",
+    "categoryName": "Reading"
+  },
+  {
+    "name": "Read articles",
+    "description": "Read 2 professional articles per day",
+    "sourceUrl": "https://fs.blog/reading",
+    "categoryName": "Reading"
+  },
+  {
+    "name": "Sleep by 23:00",
+    "description": "Go to bed before 23:00 for optimal recovery",
+    "sourceUrl": "https://www.sleepfoundation.org/sleep-hygiene",
+    "categoryName": "Sleep"
+  },
+  {
+    "name": "No screens before sleep",
+    "description": "Avoid screens 1 hour before bed to improve sleep quality",
+    "sourceUrl": "https://www.sleepfoundation.org/bedroom-environment/blue-light",
+    "categoryName": "Sleep"
+  },
+  {
+    "name": "Drink 2L water",
+    "description": "Drink at least 2 liters of water daily",
+    "sourceUrl": "https://www.healthline.com/health/how-much-water-should-I-drink",
+    "categoryName": "Nutrition"
+  },
+  {
+    "name": "No sugar after 18:00",
+    "description": "Avoid sugar after 6pm to improve metabolic health",
+    "sourceUrl": "https://www.healthline.com/nutrition/sugar-and-gut-health",
+    "categoryName": "Nutrition"
+  }
+]

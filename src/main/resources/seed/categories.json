@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Fitness",
+    "description": "Physical health and exercise habits"
+  },
+  {
+    "name": "Reading",
+    "description": "Books, articles and learning habits"
+  },
+  {
+    "name": "Sleep",
+    "description": "Sleep quality and rest habits"
+  },
+  {
+    "name": "Nutrition",
+    "description": "Healthy eating and drinking habits"
+  }
+]

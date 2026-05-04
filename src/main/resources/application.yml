@@ -1,10 +1,15 @@
 server:
   port: 8081
 
+habit-tracker:
+  seed:
+    enabled: true
+
 spring:
   jpa:
     hibernate:
       ddl-auto: create-drop # позже поставлю none, и поставлю sql-миграции
+    show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect

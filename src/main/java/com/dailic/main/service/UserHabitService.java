@@ -9,7 +9,7 @@ import com.dailic.main.model.UserHabit;
 import com.dailic.main.repository.HabitTemplateRepository;
 import com.dailic.main.repository.UserHabitRepository;
 import com.dailic.main.repository.UserRepository;
-import com.dailic.main.util.PagedResponse;
+import com.dailic.main.dto.PagedResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

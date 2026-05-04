@@ -1,4 +1,4 @@
-package com.dailic.main.util;
+package com.dailic.main.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -11,7 +11,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/private")
+@RequestMapping("/api/private/habit-template")
 @RequiredArgsConstructor
 public class HabitTemplatePrivateController {
 
