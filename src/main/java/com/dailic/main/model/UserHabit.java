@@ -31,14 +31,25 @@ public class UserHabit {
     @Builder.Default
     private Integer streak = 0;
 
-    @Size(max = 100)
-    private String note; // todo-feat дневник мб буду добавлять
+    @NotNull
+    @Builder.Default
+    private Integer longestStreak = 0;
 
-    private LocalDate createdAt;
+    @Size(max = 100)
+    private String description;
+
+    @Column(nullable = false)
+    private LocalDate startedAt;
+
+    private LocalDate lastCompletedAt; // Для расчета стриков
+
+    @Column(nullable = false)
+    @Builder.Default
+    private Integer targetPerDay = 1; // todo-feat метод выполнения плана введу
 
     @PrePersist
     public void prePersist() {
-        createdAt = LocalDate.now();
+        startedAt = LocalDate.now();
     }
 }
 

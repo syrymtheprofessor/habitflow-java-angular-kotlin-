@@ -14,6 +14,6 @@ public class UserHabitResponse {
     private UUID id;
     private GetHabitTemplateResponse habitTemplate;
     private Integer streak;
-    private String note;
+    private String description;
     private LocalDate startedAt;
 }

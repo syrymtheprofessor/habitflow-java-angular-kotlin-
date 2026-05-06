@@ -1,21 +1,42 @@
 package com.dailic.main.model;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
+@Table(name = "habit_logs", uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"user_habit_id", "date"})
+})
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class HabitLog {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @ManyToOne
-    @JoinColumn(name = "user_habit_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_habit_id", nullable = false)
     private UserHabit userHabit;
 
+    // 👇 Добавь это поле для быстрых запросов (опционально)
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JoinColumn(name = "user_id", nullable = false)
+//    private User user;
+
+    @Column(nullable = false)
     private LocalDate date;
-    private Boolean completed;
+
+    @Column(nullable = false)
+    @Builder.Default
+    private Boolean completed = false;
+
+    private LocalDateTime activeStatus; // todo: Active status
 }

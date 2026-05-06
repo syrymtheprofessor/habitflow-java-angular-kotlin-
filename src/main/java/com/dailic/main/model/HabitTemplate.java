@@ -27,10 +27,23 @@ public class HabitTemplate {
     private UUID id;
 
     private String name;
+
     private String description;
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
 
     private String sourceUrl; // TODO (GLOBAL FEAT) Может другой сервис нужен будет для неё
+
+    @Builder.Default
+    private Boolean isPublic = true; // todo-feat в настройках профиля добавить возможность редактировать
+
+//    @Builder.Default
+//    private Integer difficulty = 1; // todo-feat добавлю форум для обсуждения достижения цели (пример: 10 000 часов для мастерства. Это примерно 10 лет усердных занятий по 3 часа в день или около 90 минут ежедневно в течение 20 лет.)
+//
+//    @Builder.Default
+//    private Integer estimatedMinutes = 15; // todo-feat метод выполнения плана введу
 }
+
+
+

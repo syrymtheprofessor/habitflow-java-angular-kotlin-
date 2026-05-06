@@ -39,7 +39,7 @@ public class UserHabitMapperTest {
         template.setId(UUID.randomUUID());
         template.setName("Morning run");
         template.setDescription("Run every morning");
-            template.setCategory(category);
+        template.setCategory(category);
         template.setSourceUrl("https://example.com");
 
         User user = new User(); // userHabit(user)
@@ -47,10 +47,10 @@ public class UserHabitMapperTest {
 
         UserHabit userHabit = new UserHabit();
         userHabit.setId(UUID.randomUUID());
-            userHabit.setUser(user); // first one here
-            userHabit.setTemplate(template); // second one here
+        userHabit.setUser(user); // first one here
+        userHabit.setTemplate(template); // second one here
         userHabit.setStreak(5);
-        userHabit.setNote("Feeling good");
+        userHabit.setDescription("Feeling good");
         userHabit.setStartedAt(LocalDate.now());
 
         // 2. Маппинг
@@ -63,7 +63,7 @@ public class UserHabitMapperTest {
         assertEquals("Morning run", result.getHabitTemplate().getName());
         assertEquals("Fitness", result.getHabitTemplate().getCategoryName()); // it is fine
         assertEquals(5, result.getStreak());
-        assertEquals("Feeling good", result.getNote());
+        assertEquals("Feeling good", result.getDescription());
     }
 
 }
